@@ -1,0 +1,136 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* formulário de cadastro */
+#formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 15px;
+}
+
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    max-width: 340px;
+    background-color: var(--cor-branca);
+}
+
+#formulario-cadastro > div {
+    width: 100%;
+}
+
+#formulario-cadastro > div > label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro2);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.formulario-botao-azul {
+    width: 100%;
+}
+
+#formulario-cadastro > p {
+
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+}
+
+a {
+    color: var(--cor-preto); /* cor padrão preta para o link */
+    text-decoration: none; /* mantém sem sublinhado */
+  }
+  
+  a .texto-azul {
+    color: var(--cor-azul); /* só "Faça login" azul */
+  }
+  
+
+
+#formulario-cadastro > a {
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+##Upload-Imagem {
+    width: 100%;
+    max-width: 340px;
+    height: 35px;
+    background-color: var(--cor-cinza-escuro1);
+    border: var(--borda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-branca);
+    text-align: center;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+#Upload-Imagem label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* esconde o input */
+#Upload-Imagem input[type="file"] {
+    display: none;
+}
+
+/* hover com cinza claro */
+#Upload-Imagem:hover {
+    background-color: var(--cor-cinza-claro); /* OU: #e0e0e0 */
+    color: var(--cor-preto); /* Para contraste melhor com fundo claro */
+}
+
+
+
+/* link para login */
+#formulario-cadastro > a,
+#formulario-cadastro a {
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* seção de instalação de aplicativo */
+.informacao-aplicativo {
+    background-color: var(--borda);
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 400;
+}
+
+#secao-instalacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#secao-instalacao img {
+    width: 120px;
+    height: 39px;
+}

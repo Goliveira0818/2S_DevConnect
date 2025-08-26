@@ -53,3 +53,21 @@ input{
     border: var(--borda);
     background-color: var(--cor-cinza-claro);
 }
+
+.formulario-botao-azul{
+    background-color: var(--cor-azul);
+    border-radius:var(--borda-arredondada); 
+    border: none;
+    height: 35px;
+
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-sm);
+    
+}
+.arquivo 
+
+{
+
+display: none;
+
+}
