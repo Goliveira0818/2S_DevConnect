@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevConnectTorloni", "DevConnectTorloni.csproj", "{434A2D25-D1CB-2A1F-6AAF-92BCA4136243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{434A2D25-D1CB-2A1F-6AAF-92BCA4136243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{434A2D25-D1CB-2A1F-6AAF-92BCA4136243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{434A2D25-D1CB-2A1F-6AAF-92BCA4136243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{434A2D25-D1CB-2A1F-6AAF-92BCA4136243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08A05CEA-1B76-4A16-9DD4-76EEF473C9D7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,67 @@
+    @model DevConnectTorloni.Models.Usuario
+     
+     <link rel="stylesheet" href="~/css/cadastro.css" />
+     <script defer>
+     const usuarioNovoCadastrado = "@ViewBag.UsuarioNovoCadastrado";
+
+
+     if(usuarioNovoCadastrado == "Nao Cadastrado"){
+        alert("Usuário não cadastrado! Tente Novamente 😞")
+     }
+
+
+     </script>
+
+    <h1>Crie sua conta DevConnect</h1>
+    <main>
+        <div>
+            <!-- Formulário de Cadastro -->
+            <form id="formulario-cadastro" class="estilo-formulario" enctype="multipart/form-data"  asp-action="Index" asp-controller="Usuario">
+                <img src="~/images/logo-devconnect-lg.svg" alt="Logo da DevConnect" />
+
+                <div>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" asp-for="NomeCompleto"/>
+                </div>
+
+                <div>
+                    <label for="">E-mail</label>
+                    <input type="text" asp-for="Email" >
+                </div>
+
+                <div>
+                   <label for="type">Nome de usuario</label>
+                   <input type="text" asp-for="NomeUsuario">
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" asp-for="Senha">
+                </div>
+
+                <div id="Upload-Imagem">
+                    <label for="input-upload">Faça upload da imagem aqui</label>
+                    <input type="file" id="input-upload" name="imagem">
+                    @*  accept="imagem/*" *@
+                  </div>
+                  
+
+                <button type="submit" class="formulario-botao-azul">Cadastrar</button>
+
+                <p>ou</p>
+
+                <a href="../pages/index.html">
+                    Já tem uma conta? <span class="texto-azul">Faça login</span>
+                  </a>
+                  
+            </form>
+
+            <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
+
+            <!-- Seção instalação -->
+            <section id="secao-instalacao">
+                <img src="~/images/app-store.svg" alt="Disponível na App Store" />
+                <img src="~/images/google-play.svg" alt="Disponível no Google Play" />
+            </section>
+        </div>
+    </main>
